@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi sitio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #f4f6f8;
+    }
+
+    /* Barra superior */
+    .barra-superior {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+
+    .barra-superior h1 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+
+    /* Panel de navegación */
+    .navegacion {
+      position: fixed;
+      top: 64px;
+      bottom: 0;
+      left: 0;
+      width: 240px;
+      padding: 24px 16px;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      overflow-y: auto;
+    }
+
+    .navegacion a {
+      display: block;
+      margin-bottom: 8px;
+      padding: 12px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .navegacion a:hover {
+      background: #edf1f5;
+    }
+
+    /* Panel principal */
+    main {
+      min-height: 100vh;
+      margin-left: 240px;
+      padding: 96px 32px 32px;
+    }
+
+    .contenido {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+      background: #fff;
+      border: 1px solid #e2e5e9;
+      border-radius: 10px;
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 650px) {
+      .navegacion {
+        width: 170px;
+      }
+
+      main {
+        margin-left: 170px;
+        padding: 88px 16px 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navegacion {
+        position: static;
+        width: auto;
+        padding: 8px;
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .navegacion a {
+        display: inline-block;
+        margin: 0 4px;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 20px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="barra-superior">
+    <h1>Claudio Molina Castillo</h1>
+  </header>
+
+  <nav class="navegacion" aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#publicaciones">Publicaciones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section class="contenido" id="inicio">
+      <h2>Contenido principal</h2>
+      <p>Cirujano Dentista</p>
+      <p>Magíster en Ciencias Odontológicas, mención Patología Oral</p>
+      <p>Magíster en Pedagogía Universitaria</p>
+       
+    </section>
+   
+    <section class="publicaciones" id="publicaciones">
+      <h2>Publicaciones</h2>
+
+
+
+<ol>
+
+<li>Alarcón A, <b>Molina C</b>, Martı́nez B, Venables C. <i>Primary Mandibular ALK-Positive Anaplastic Large Cell Lymphoma in a 5-Year-Old Child: A Case Report and Review of the Literature.</i> Oral Surg Oral Med Oral Pathol Oral Radiol. 2026 In press. <a href="https://doi.org/10.1016/j.oooo.2026.09.005" target="_blank">DOI:10.1016/j.oooo.2026.09.00</a></li>
+
+<li>Carvajal P, Castro I, Urra F, Aguilera S, González S, <b>Molina C</b>, Campos S, Ramı́rez G, Chávez C, Gutiérrez J, Yáñez MJ, González MJ, Barrera MJ. Altered mitochondrial ultrastructure in salivary epithelial cells of patients with Sjögren’s disease is associated with mitochondrial DNA release and increased activation of pattern recognition receptors: potential use of tofacitinib as therapy. Ann Rheum Dis. 2026 Jul;85(7):1351-1364. PMID: 42000202. <a href= "https://doi.org/10.1016/j.ard.2026.03.022" target="_blank">DOI:10.1016/j.ard.2026.03.022</a></li>
+
+<li>Ferri, G., <b>Molina C</b>astillo, C., Bravo Bravo, F., Venegas Gómez, M., Rodrı́guez Álvarez, D., Navia Rubilard, M. Percepción estudiantil de la Integración de simuladores hápticos en Odontologı́a. ARS MEDICA Revista de Ciencias Médicas, 2026; 51(1). DOI:10.11565/arsmed.v51i1.2181</li>
+
+<li>Castro I, Carvajal P, Aguilera S, Barrera MJ, Matus S, González S, <b>Molina C</b>, González MJ. Integrated stress response inhibition restores hsa-miR-145-5p levels after IFN-β stimulation
+in salivary gland epithelial cells. Association between cellular stress and miRNA biogenesis in Sjögren’s disease. Journal of Autoimmunity. 2025; 153, 103412. DOI:10.1016/j.jaut.2025.103412</li>
+
+<li>Núñez M, Carvajal P, Aguilera S, Matus S, Couto A, Landoni M, Boncompain G, González S, <b>Molina C</b>, Pino K, Indo S, Figueroa L, González MJ, Castro I. Giantin mediates Golgi localization of Gal3-O-sulfotransferases and affects salivary mucin sulfation in Sjögren’s disease patients. JCI Insight. 2024 Nov 22;9(22):e171585. DOI: 10.1172/jci.insight.171585</li>
+
+<li>Venegas M, Bravo F, Silva A, <b>Molina C</b>., Ferri G. Satisfacción de los estudiantes de Odontologı́a con el aprendizaje blended-learning en la Universidad San Sebastián, Chile. Revista de la Fundación Educación Médica.2024; 27 (2): 63-69. DOI:10.33588/fem.272.1328</li>
+
+<li>Carvajal P, Aguilera S, Jara D, Indo S, Barrera MJ, González S, <b>Molina C</b>, Heathcote B, Hermoso M, Castro I, González MJ. hsa-miR-424-5p and hsa-miR-513c-3p dysregulation mediated
+by IFN-γ is associated with salivary gland dysfunction in Sjögren’s syndrome patients. Journal of Autoimmunity. 2023 july; 138; 103037. DOI: 10.1016/j.jaut.2023.103037</li>
+
+
+<li>Carvajal P, Bahamondes V, Jara D, Castro I; Matus S; Aguilera S, <b>Molina C</b>, González
+S, Hermoso M, Barrera MJ, González MJ. The integrated stress response is activated in the
+salivary glands of Sjögren’s syndrome patients. Frontiers in Medicine. 2023 march; 10. DOI:
+10.3389/fmed.2023.1118703</li>
+
+
+<li>Negro G, Castro I, Martı́nez B, Aguilera S, <b>Molina C</b>, González J, González S. Identification
+of macrophages and Epstein-Barr virus in salivary glands of Sjögren’s syndrome patients. Int. J.
+Inter. Dent Vol. 15(1); 39-43, 2022. DOI: 10.4067/S2452-55882022000100039</li>
+
+<li>Castro I, Carvajal Garcés P, Heathcote B, Aguilera S, Jara D, Barrera MJ, Aliaga Tobar V,
+Maracaja Coutinho V, Urzúa U, Quest AFG, González S, <b>Molina C</b>, Hermoso M, González
+MJ. Small RNA Expression Profiling Reveals hsa-miR-181d-5p Downregulation Associated With
+TNF-α Overexpression in Sjögren’s Syndrome Patients. Front. Immunol., 2022, april 01. DOI:
+10.3389/fimmu.2022.870094</li>
+
+<li>Jara D, Carvajal P, Castro I, Barrera MJ, Aguilera S, González S, <b>Molina C</b>, Hermoso M,
+González MJ. Type I interferon dependent hsa-miR-145-5p downregulation modulates MUC1 and
+TLR4 overexpression in salivary glands from Sjögren’s syndrome patients. Front. Immunol. 2021
+june 02.DOI: 10.3389/fimmu.2021.685837</li>
+
+
+<li>Barrera MJ, Aguilera S, Castro I, Carvajal P, Jara D, <b>Molina C</b>, González S, González MJ.
+Dysfunctional mitochondria as critical players in the inflammation of autoimmune diseases:
+potential role in sjögren’s syndrome. Autoimmunity Reviews. 2021 august; 20(8),102867. PMID:
+34118452 DOI: 10.1016/j.autrev.2021.102867</li>
+
+<li>Barrera MJ, Aguilera S, Castro I, Matus S, Carvajal P, <b>Molina C</b>, González S, Jara D, Hermoso
+M, González MJ. Tofacitinib counteracts IL-6 overexpression induced by deficient autophagy:
+implications in Sjögren’s syndrome. PMID: 33216905 DOI: 10.1093/rheumatology/keaa670</li>
+
+
+<li>Castro I, Albornoz N, Aguilera S, Barrera MJ, González S, Núñez M, Carvajal P,
+Jara D, Lagos C, <b>Molina C</b>, Urzúa U, Hermoso MA, González MJ. Aberrant MUC1
+accumulation in salivary glands of Sjögren’s syndrome patients is reversed by TUDCA in
+vitro.Rheumatology (Oxford). 2020 Apr 1;59(4):742-753. [Epub ahead of print] PMID:31377809
+DOI: 10.1093/rheumatology/kez316</li>
+
+<li>Cortés J, Hidalgo J, Aguilera S, Castro I, Brito M, Urra H, Pérez P, Barrera MJ, Carvajal P,
+Urzúa U, González S, <b>Molina C</b>, Bahamondes V, Hermoso M, González MJ. Synaptotagmin-1
+overexpression under inflammatory conditions affects secretion in salivary glands from Sjögren’s
+syndrome patients. J Autoimmun. 2019 Feb;97:88-99. Epub 2018 Oct 31. PMID:30391023 DOI:
+10.1016/j.jaut.2018.10.019</li>
+
+<li>Barrera MJ, Aguilera S, Castro I, González S, Carvajal P, <b>Molina C</b>, Hermoso MA, González MJ.
+Endoplasmic reticulum stress in autoimmune diseases: Can altered protein quality control and/or
+unfolded protein response contribute to autoimmunity? A critical review on Sjögren’s syndrome.
+Autoimmun Rev. 2018 Aug;17(8):796-808. Epub 2018 Jun 8. Review. PMID: 29890347 DOI:
+10.1016/j.autrev.2018.02.009</li>
+
+
+<li>Lagos C, Carvajal P, Castro I, Jara D, González S, Aguilera S, Barrera MJ, Quest A,
+Bahamondes V, <b>Molina C</b>, Urzúa U, Hermoso M, Leyton C, González MJ. Association of high
+5-hydroxymethylcytosine levels with Ten Eleven Translocation 2 overexpression and inflammation
+in Sjögren’s syndrome patients. Clin Immunol. 2018 Nov;196:85-96. Epub 2018 Jun 9. PMID:
+29894742 DOI: 10.1016/j.clim.2018.06.002</li>
+
+
+<li>Sepúlveda D, Barrera MJ, Castro I, Aguilera S, Carvajal P, Lagos C, González S, Albornoz
+S, Bahamondes V, Quest AF, Urzúa U, <b>Molina C</b>, Leyton C, Hermoso M, González MJ
+Impaired IRE1α XBP-1 pathway associated to DNA methylation might contribute to salivary gland
+dysfunction in Sjögren’s syndrome patients. Rheumatology (Oxford). 2018 Jun 1;57(6):1021-1032.
+PubMed PMID: 29534223 DOI: 10.1093/rheumatology/key021</li>
+
+
+<li>Rodrı́guez-Hopp M, González Providell S, <b>Molina C</b>astillo C, Martı́nez Rondanelli B, Rebolledo
+Urbina J. Assessment of the educational environment in a chilean dental school [Análisis del
+ambiente educacional en escuela de odontologı́a chilena]. Rev Clin Periodoncia Implantol Rehabil
+Oral. 2016 August; 9:153-62. DOI: 10.1016/j.piro.2016.05.003</li>
+
+
+<li>Barrera MJ, Aguilera S, Castro I, Cortés J, Bahamondes V, Quest AF, <b>Molina C</b>, González S,
+Hermoso M, Urzúa U, Leyton C, González MJ. Pro-inflammatory cytokines enhance ERAD and
+ATFα pathway activity in salivary glands of Sjogren’s syndrome patients. J Autoimmun. 2016
+Dec: 5:68-81.Epub 2016 Jul 25. PMID: 27461470. DOI: 10.1016/j.jaut.2016.07.006</li>
+
+<li>Rodrı́guez M, Fontealba J, <b>Molina C</b>, González S. OSCE as a design enabling test for admission
+to the dental clinic (OSCE un diseño de prueba de habilitación de admisión a la clı́nica dental).
+Journal of Science Education 2015 January; 16(1):15-17.</li>
+
+<li>Barrera MJ, Aguilera S, Veerman E, Quest A, Dı́az-Jiménez D, Urzúa U, Cortés J, González S,
+Castro I, <b>Molina C</b>, Bahamondes V, Leyton C, Hermoso M, González MJ. Salivary mucins induce
+a Toll-like receptor 4-mediated pro-inflammatory response in human submandibular salivary cells:
+are mucins involved in Sjögren’s syndrome? Rheumatology (Oxford). 2015 Aug;54(8):1518-27.
+Epub 2015 Mar 22. PMID: 25802401 DOI: 10.1093/rheumatology/kev026</li>
+
+
+<li>Sung HH, Castro I, González S, Aguilera S, Smorodinsky NI, Quest AF, Bahamondes V, Alliende
+C, Cortés J, <b>Molina C</b>, Urzúa U, Barrera MJ, Hermoso M, Herrera L, Leyton C, González MJ.
+MUC1/sec and MUC1/y overexpression is associated with inflammation in Sjögren’s syndrome.
+Oral Dis. 2015 Sep;21(6):730-8. Epub 2015 Apr 6. PMID: 25757505. DOI: 10.1111/odi.12339</li>
+
+
+<li>González S, Sung H, Sepúlveda D, González M, <b>Molina C</b>. Oral manifestations and their
+treatment in Sjögren’s syndrome. Oral Dis. 2014 Mar;20(2):153-61. Epub 2013 Apr 5 PubMed
+PMID: 23557026. DOI: 10.1111/odi.12105</li>
+
+
+<li>Barrera MJ, Bahamondes V, Sepúlveda D, Quest AF, Castro I, Cortés J, Aguilera S, Urzúa
+U, <b>Molina C</b>, Pérez P, Ewert P, Alliende C, Hermoso MA, González S, Leyton C, González
+MJ. Sjögren’s syndrome and the epithelial target: a comprehensive review. J Autoimmun. 2013
+May;42:7-18. Epub 2013 Mar 13. PubMed PMID: 23497939. DOI: 10.1016/j.jaut.2013.02.001</li>
+
+<li>Castro I, Sepúlveda D, Cortés J, Quest AF, Barrera MJ, Bahamondes V, Aguilera S, Urzúa
+U, Alliende C, <b>Molina C</b>, González S, Hermoso MA, Leyton C, González MJ. Oral dryness in
+Sjogren’s syndrome patients. Not just a question of water. Autoimmun Rev. 2012 Nov 30. [Epub
+ahead of print] PubMed PMID: 23207284. DOI: 10.1016/j.autrev.2012.10.018</li>
+
+<li>Castro I, Aguilera S, Brockhausen I, Alliende C, Quest AF, <b>Molina C</b>, Urzúa U, Mandel U,
+Bahamondes V, Barrera MJ, Sánchez M, González S, Hermoso M, Leyton C, González MJ.
+Decreased salivary sulphotransferase activity correlated with inflammation and autoimmunity
+parameters in Sjogren’s syndrome patients. Rheumatology (Oxford). 2012 Mar;51(3):482-90. Epub
+2011 Nov 17. PubMed PMID: 22101162. DOI: 10.1093/rheumatology/ker351</li>
+
+<li>Barrera MJ, Sánchez M, Aguilera S, Alliende C, Bahamondes V, <b>Molina C</b>, Quest AF,
+Urzúa U, Castro I, González S, Sung HH, Albornoz A, Hermoso M, Leyton C, González
+MJ. Aberrant localization of fusion receptors involved in regulated exocytosis in salivary glands
+of Sjögren’s syndrome patients is linked to ectopic mucin secretion. J Autoimmun. 2012</li>
+
+<li>Bahamondes V, Albornoz A, Aguilera S, Alliende C, <b>Molina C</b>, Castro I, Urzúa U, Quest AF,
+Barrera MJ, González S, Sánchez M, Härtel S, Hermoso M, Leyton C, González MJ. Changes
+in Rab3D expression and distribution in the acini of Sjögren’s syndrome patients are associated
+with loss of cell polarity and secretory dysfunction. Arthritis Rheum. 2011 Oct;63(10):3126-35.
+PubMed PMID: 21702009. DOI: 10.1002/art.30500</li>
+
+<li>González S, Aguilera S, Alliende C, Urzúa U, Quest AF, Herrera L, <b>Molina C</b>, Hermoso M, Ewert
+P, Brito M, Romo R, Leyton C, Pérez P, González MJ. Alterations in type I hemidesmosome
+components suggestive of epigenetic control in the salivary glands of patients with Sjögren’s
+syndrome. Arthritis Rheum. 2011 Apr;63(4):1106-15. doi: 10.1002/art.30212. PubMed PMID:
+21305504. DOI: 10.1002/art.30212</li>
+
+<li>González S, Aguilera S, Urzúa U, Quest AF, <b>Molina C</b>, Alliende C, Hermoso M, González
+MJ. Mechanotransduction and epigenetic control in autoimmune diseases. Autoimmun Rev. 2011
+Jan;10(3):175-9. Epub 2010 Oct 20. Review. Erratum in: Autoimmun Rev. 2011 May;10(7):438.
+PubMed PMID: 20923710. DOI: 10.1016/j.autrev.2010.09.022</li>
+
+<li>Ewert P, Aguilera S, Alliende C, Kwon YJ, Albornoz A, <b>Molina C</b>, Urzúa U, Quest AF, Olea
+N, Pérez P, Castro I, Barrera MJ, Romo R, Hermoso M, Leyton C, González MJ. Disruption
+of tight junction structure in salivary glands from Sjögren’s syndrome patients is linked to
+proinflammatory cytokine exposure. Arthritis Rheum. 2010 May;62(5):1280-9. PubMed PMID:
+20131287. DOI: 10.1002/art.27362</li>
+
+
+<li>Pérez P, Aguilera S, Olea N, Alliende C, <b>Molina C</b>, Brito M, Barrera MJ, Leyton C, Rowzee
+A, González MJ. Aberrant localization of ezrin correlates with salivary acini disorganization in
+Sjogren’s Syndrome. Rheumatology (Oxford). 2010 May;49(5):915-23. Epub 2010 Feb 25. PubMed
+PMID: 20185532.DOI: 10.1093/rheumatology/keq033</li>
+
+<li>Pérez P, Anaya JM, Aguilera S, Urzúa U, Munroe D, <b>Molina C</b>, Hermoso MA, Cherry JM,
+Alliende C, Olea N, Ruiz-Narváez E, González MJ. Gene expression and chromosomal location
+for susceptibility to Sjögren’s syndrome. J Autoimmun. 2009 Sep;33(2):99-108. Epub 2009 Jun 11.
+PubMed PMID: 19523788. DOI: 10.1016/j.jaut.2009.05.001</li>
+
+
+<li>Velozo J, Aguilera S, Alliende C, Ewert P, <b>Molina C</b>, Pérez P, Leyton L, Quest A, Brito M, González S, Leyton C, Hermoso M, Romo R, González MJ. Severe alterations in expression and localisation of α6β4 integrin in salivary gland acini from patients with Sjögren’s syndrome. Ann Rheum Dis. 2009 Jun;68(6):991-6. Epub 2008 Jul 14. PubMed PMID: 18625620. DOI: 10.1136/ard.2008.089607</li>
+
+<li>Alliende C, Kwon YJ, Brito M, <b>Molina C</b>, Aguilera S, Pérez P, Leyton L, Quest AF, Mandel U, Veerman E, Espinosa M, Clausen H, Leyton C, Romo R, González MJ. Reduced sulfation of MUC5B is linked to xerostomia in patients with Sjögren syndrome. Ann Rheum Dis. 2008 Oct;67(10):1480-7. Epub 2007 Nov 12. PubMed PMID: 17998215.DOI: 10.1136/ard.2007.078246</li>
+
+
+<li>Kwon YJ, Pérez P, Aguilera S, <b>Molina C</b>, Leyton L, Alliende C, Leyton C, Brito M, Romo R, González MJ. Involvement of specific laminins and nidogens in the active remodeling of the basal
+lamina of labial salivary glands from patients with Sjögren’s syndrome. Arthritis Rheum. 2006 Nov;54(11):3465-75. PubMed PMID: 17075843. DOI: 10.1002/art.22177</li>
+
+
+<li><b>Molina C</b>, Alliende C, Aguilera S, Kwon YJ, Leyton L, Martı́nez B, Leyton C, Pérez P, González MJ. Basal lamina disorganisation of the acini and ducts of labial salivary glands from
+patients with Sjogren’s syndrome: association with mononuclear cell infiltration. Ann Rheum Dis. 2006 Feb;65(2):178-83. Epub 2005 Jul 13. PubMed PMID: 16014676; PubMed Central PMCID: PMC1798011. DOI: 10.1136/ard.2004.033837</li>
+
+<li>Pérez P, Kwon YJ, Alliende C, Leyton L, Aguilera S, <b>Molina C</b>, Labra C, Julio M, Leyton C, González MJ. Increased acinar damage of salivary glands of patients with Sjögren’s syndrome is paralleled by simultaneous imbalance of matrix metalloproteinase 3 /tissue inhibitor of metalloproteinases 1 and matrix metalloproteinase 9 /tissue inhibitor of metalloproteinases 1 ratios. Arthritis Rheum. 2005 Sep;52(9):2751-60. PubMed PMID: 16142742. DOI: 10.1002/art.21265</li>
+
+<li>Goicovich E, <b>Molina C</b>, Pérez P, Aguilera S, Fernández J, Olea N, Alliende C, Leyton C, Romo R, Leyton L, González MJ. Enhanced degradation of proteins of the basal lamina and stroma by matrix metalloproteinases from the salivary glands of Sjögren’s syndrome patients: correlation with reduced structural integrity of acini and ducts. Arthritis Rheum. 2003 Sep;48(9):2573-84.
+PubMed PMID: 13130477.DOI: 10.1002/art.11178</li>
+
+<li>Pérez P, Goicovich E, Alliende C, Aguilera S, Leyton C, <b>Molina C</b>, Pinto R, Romo R, Martı́nez B, González MJ. Differential expression of matrix metalloproteinases in labial salivary glands of patients with primary Sjögren’s syndrome. Arthritis Rheum. 2000 Dec;43(12):2807-17. PubMed PMID: 11145040. DOI: 10.1002/1529-0131(200012)43:12¡2807::AID-ANR22¿3.0.CO;2-M</li>
+
+</ol>
+
+
+
+
+</section>
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </main>
+</body>
+</html>
