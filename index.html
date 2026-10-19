@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi sitio</title>
+  <title>Sitio Web Claudio Molina</title>
 
   <style>
     * {
@@ -108,7 +108,56 @@
         padding: 20px 12px;
       }
     }
+    .grupo-nav summary {
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.grupo-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.grupo-nav summary::after {
+  content: "▸";
+  float: right;
+  transition: transform 0.2s;
+}
+
+.grupo-nav[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.subenlaces {
+  margin-left: 16px;
+  border-left: 2px solid #ddd;
+  padding-left: 8px;
+}
+
   </style>
+
+<style> /* Ajuste del párrafo en el listado, margin-botom separa entre elementos de la lista, line-heigh la altura de la línea y scroll-margin-top es para el espaciado de la barra superior*/
+  ol li {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+  }
+section[id] {
+    scroll-margin-top: 80px;
+  }
+.subenlaces {
+  margin-left: 16px;
+  border-left: 2px solid #ddd;
+  padding-left: 8px;
+}
+
+.subenlaces a {
+  font-size: 0.95rem;
+}
+
+
+</style>>
+
 </head>
 
 <body>
@@ -117,25 +166,55 @@
   </header>
 
   <nav class="navegacion" aria-label="Navegación principal">
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#publicaciones">Publicaciones</a>
+       <a href="#inicio">Inicio</a>
+    <a href="#acerca">Sobre mí</a>
+    <details class="grupo-nav">
+    <summary>Publicaciones</summary>
+      <a href="#publicaciones">Publicaciones</a>
+      <div class="subenlaces">
+        <a href="#revistas">En revistas</a>
+        <a href="#capitulos">Capítulos de libros</a>
+        <a href="#docs_tec">Documentos técnicos</a>
+        <a href="#otros">Otros</a>
+    </details>
+      </div>
+    <a href="#formación"> Formación</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
   <main>
     <section class="contenido" id="inicio">
-      <h2>Contenido principal</h2>
+      <h2></h2>
+      
+       
+    </section>
+
+    <section class="Acerca" id="acerca">
+
       <p>Cirujano Dentista</p>
       <p>Magíster en Ciencias Odontológicas, mención Patología Oral</p>
       <p>Magíster en Pedagogía Universitaria</p>
-       
-    </section>
-   
-    <section class="publicaciones" id="publicaciones">
+
+
+    </section> 
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+<section class="publicaciones" id="publicaciones">
       <h2>Publicaciones</h2>
 
-
+ <section id="revistas">
+    <h3>Publicaciones en revistas</h3>
+  
 
 <ol>
 
@@ -143,10 +222,10 @@
 
 <li>Carvajal P, Castro I, Urra F, Aguilera S, González S, <b>Molina C</b>, Campos S, Ramı́rez G, Chávez C, Gutiérrez J, Yáñez MJ, González MJ, Barrera MJ. Altered mitochondrial ultrastructure in salivary epithelial cells of patients with Sjögren’s disease is associated with mitochondrial DNA release and increased activation of pattern recognition receptors: potential use of tofacitinib as therapy. Ann Rheum Dis. 2026 Jul;85(7):1351-1364. PMID: 42000202. <a href= "https://doi.org/10.1016/j.ard.2026.03.022" target="_blank">DOI:10.1016/j.ard.2026.03.022</a></li>
 
-<li>Ferri, G., <b>Molina C</b>astillo, C., Bravo Bravo, F., Venegas Gómez, M., Rodrı́guez Álvarez, D., Navia Rubilard, M. Percepción estudiantil de la Integración de simuladores hápticos en Odontologı́a. ARS MEDICA Revista de Ciencias Médicas, 2026; 51(1). DOI:10.11565/arsmed.v51i1.2181</li>
+<li>Ferri, G., <b>Molina Castillo, C</b>., Bravo Bravo, F., Venegas Gómez, M., Rodrı́guez Álvarez, D., Navia Rubilard, M. Percepción estudiantil de la Integración de simuladores hápticos en Odontologı́a. ARS MEDICA Revista de Ciencias Médicas, 2026; 51(1). <a href = "https://doi.org/arsmed.v51i1.2181" target = "_blank"> DOI:10.11565/arsmed.v51i1.2181</a> </li>
 
 <li>Castro I, Carvajal P, Aguilera S, Barrera MJ, Matus S, González S, <b>Molina C</b>, González MJ. Integrated stress response inhibition restores hsa-miR-145-5p levels after IFN-β stimulation
-in salivary gland epithelial cells. Association between cellular stress and miRNA biogenesis in Sjögren’s disease. Journal of Autoimmunity. 2025; 153, 103412. DOI:10.1016/j.jaut.2025.103412</li>
+in salivary gland epithelial cells. Association between cellular stress and miRNA biogenesis in Sjögren’s disease. Journal of Autoimmunity. 2025; 153, 103412. <a href="https://doi.org/10.1016/j.jaut.2025.103412" target="_blank"> DOI:10.1016/j.jaut.2025.103412 </a></li>
 
 <li>Núñez M, Carvajal P, Aguilera S, Matus S, Couto A, Landoni M, Boncompain G, González S, <b>Molina C</b>, Pino K, Indo S, Figueroa L, González MJ, Castro I. Giantin mediates Golgi localization of Gal3-O-sulfotransferases and affects salivary mucin sulfation in Sjögren’s disease patients. JCI Insight. 2024 Nov 22;9(22):e171585. DOI: 10.1172/jci.insight.171585</li>
 
@@ -154,7 +233,6 @@ in salivary gland epithelial cells. Association between cellular stress and miRN
 
 <li>Carvajal P, Aguilera S, Jara D, Indo S, Barrera MJ, González S, <b>Molina C</b>, Heathcote B, Hermoso M, Castro I, González MJ. hsa-miR-424-5p and hsa-miR-513c-3p dysregulation mediated
 by IFN-γ is associated with salivary gland dysfunction in Sjögren’s syndrome patients. Journal of Autoimmunity. 2023 july; 138; 103037. DOI: 10.1016/j.jaut.2023.103037</li>
-
 
 <li>Carvajal P, Bahamondes V, Jara D, Castro I; Matus S; Aguilera S, <b>Molina C</b>, González
 S, Hermoso M, Barrera MJ, González MJ. The integrated stress response is activated in the
@@ -221,7 +299,7 @@ dysfunction in Sjögren’s syndrome patients. Rheumatology (Oxford). 2018 Jun 1
 PubMed PMID: 29534223 DOI: 10.1093/rheumatology/key021</li>
 
 
-<li>Rodrı́guez-Hopp M, González Providell S, <b>Molina C</b>astillo C, Martı́nez Rondanelli B, Rebolledo
+<li>Rodrı́guez-Hopp M, González Providell S, <b>Molina Castillo C</b>, Martı́nez Rondanelli B, Rebolledo
 Urbina J. Assessment of the educational environment in a chilean dental school [Análisis del
 ambiente educacional en escuela de odontologı́a chilena]. Rev Clin Periodoncia Implantol Rehabil
 Oral. 2016 August; 9:153-62. DOI: 10.1016/j.piro.2016.05.003</li>
@@ -330,27 +408,108 @@ PubMed PMID: 13130477.DOI: 10.1002/art.11178</li>
 <li>Pérez P, Goicovich E, Alliende C, Aguilera S, Leyton C, <b>Molina C</b>, Pinto R, Romo R, Martı́nez B, González MJ. Differential expression of matrix metalloproteinases in labial salivary glands of patients with primary Sjögren’s syndrome. Arthritis Rheum. 2000 Dec;43(12):2807-17. PubMed PMID: 11145040. DOI: 10.1002/1529-0131(200012)43:12¡2807::AID-ANR22¿3.0.CO;2-M</li>
 
 </ol>
+</section>
+
+
+<section id="capitulos">
+    <h3>Capítulos de libros</h3>
+  </section>
+
+<ol>
+<li>Jara D, Carvajal P, Castro I, Barrera MJ, Aguilera S, González S, <b>Molina C</b>, Hermoso
+M, González MJ. <i>Type I interferon dependent hsa-miR-145-5p downregulation modulates
+MUC1 and TLR4 overexpression in salivary glands from Sjögren’s syndrome patients.
+En: Sjögren’s Syndrome: Pathogenicity, Novel Targets and Antigens.</i> Koelsch KA, Baer
+A and Vissink A (Editors). Frontiers in Immunology. pp: 74-88. ISSN 1664-8714; ISBN
+978-2-88974-482-4. https://www.frontiersin.org/research-topics/15705/epub</li>
+
+<li><b>Molina C</b>, González S, Castro I, Barrera MJ, Aguilera S y González MJ. <i>Arquitectura y
+remodelamiento de la matriz extracelular en glándulas salivales.</i> En: Sı́ndrome de Sjögren
+(2ª ed). Anaya JM, Sarmiento-Monroy JC, Garcı́a-Carrasco M (Editores). Universidad
+del Rosario, Bogotá, Colombia. 2017, Cáp 10, 117-38.ISBN: 9789587388398; eISBN:
+9789587388411(PDF); 9789587388404(EPUB)</li>
+
+<li>Parra-Medina R, <b>Molina C</b> y González MJ. <i>Histopatologı́a de la glándula salival menor.</i>
+En: Sı́ndrome de Sjögren (2ª ed). Anaya JM, Sarmiento-Monroy JC, Garcı́a-Carrasco
+M (Editores). Universidad del Rosario, Bogotá, Colombia. 2017, Cáp 9, 105-16. ISBN:
+9789587388398; eISBN: 9789587388411(PDF); 9789587388404(EPUB)</li>
+
+ <li>González MJ, <b>Molina C</b>, Alliende C, Pérez P, Goicovich E. <i>Matriz extracelular de
+glándulas salivales en el sı́ndrome de Sjögren</i>. En: Sı́ndrome de Sjögren. J. M. Anaya,
+M Ramos, M. Garcı́a (Editores). 2001, Corporación para Investigaciones Biológicas
+Medellı́n, Colombia 1ª Ed. capı́tulo 12, págs. 113-130. ISBN: 958-940-053-1</li>
+
+</ol>
+
+
+<section id="docs_tec">
+    <h3>Documentos técnicos</h3>
+    <ul>
+     Elaboración y revisión del documento  <i>Directrices de buenas prácticas en las clı́nicas
+dentales universitarias. Medidas para la prevención de contagios del SARS-COV-2.</i>
+Asociación Chilena de Enseñanza de Odontologı́a (ACHEO). <b>2020</b>
+    </ul>
+  </section>
+
+
+
+  <section id="otros">
+    <h3>Otros</h3>
+    <ol>
+        <li>Goetz P, Araneda L, <b>Molina C</b>. Caracterı́sticas imagenológicas de los senos maxilares
+en relación con implantes dentales visualizados en exámenes de tomografı́a computada
+de haz cónico Anu. Soc. Radiol. Oral Máxilo Facial de Chile 2025; 28: 18 - 23</li>
+
+<li>Paul R, Parraguez E, <b>Molina C</b>. Visualización de lesiones de caries proximales entre
+radiografı́as de aleta mordida vs TCHC en premolares y molares Anu. Soc. Radiol. Oral
+Máxilo Facial de Chile 2025; 28: 12 - 17</li>
+
+<li>Clunes M, Gómez B, <b>Molina C</b>. Relación anatómica de los terceros molares con el seno
+maxilar usando radiografı́a panorámica y tomografı́a computada de haz cónico. Anu. Soc.
+Radiol. Oral Máxilo Facial de Chile 2024; 27: 8 - 15</li>
+
+<li><b>Molina C</b>. <i>Casos clı́nicos de baja frecuencia.</i> Anu. Soc. Radiol. Oral Máxilo Facial de
+Chile. 2007;10(1):37-43.</li>
+
+<li><b>Molina C</b>, Martı́nez B. <i>Análisis histológico comparativo entre Queratoquistes asociados
+y no asociados a Sı́ndrome de nevos basocelulares</i>. Odont. Chil. 1991;39:26-31.</li>
+
+
+</ol>
+
+
+
+
+
+
+
+  </section>
+
+
+
+
 
 
 
 
 </section>
- 
- 
- 
- 
- 
- 
 
 
 
+</section>
+<br>
+<br>
+<br>
+
+<section class = "contacto" id="contacto">
+  <h2>Contacto</h2>
+  Comunicarte conmigo a mi correo: clmolina@gmail.com
+
+  
+  <a href="mailto:clmolina@gmail.com" a mi correo electrónico></a>
 
 
-
-
-
-
-
+</section>
 
 
 
@@ -359,3 +518,11 @@ PubMed PMID: 13130477.DOI: 10.1002/art.11178</li>
  </main>
 </body>
 </html>
+ 
+ 
+ 
+ 
+ 
+
+
+
